@@ -32,8 +32,8 @@ public class StorageService {
         products.put(id2, new FixPriceProduct(id2, "Banana", 85.0, true));
         products.put(id3, new DiscountedProduct(id3, "Orange", 120.0, 0.2, true));
 
-        articles.put(id4, new Article(id3, "How to shop", "Read this first", "guide"));
-        articles.put(id5, new Article(id4, "How to Choose an Apple",
+        articles.put(id4, new Article(id4, "How to shop", "Read this first", "guide"));
+        articles.put(id5, new Article(id5, "How to Choose an Apple",
                 "Apples are great. Choose red ones for sweetness.", "guide"));
     }
 

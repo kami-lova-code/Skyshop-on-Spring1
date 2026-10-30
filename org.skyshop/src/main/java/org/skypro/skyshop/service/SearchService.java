@@ -19,9 +19,11 @@ public class SearchService {
         if (pattern == null || pattern.isBlank())
             return List.of();
 
+        String lowerCasePattern = pattern.toLowerCase();
+
 
         return storageService.getAllSearchable().stream()
-                .filter(s -> s.getSearchTerm().toLowerCase().contains(pattern))
+                .filter(s -> s.getSearchTerm().toLowerCase().contains(lowerCasePattern))
                 .map(SearchResult::fromSearchable)
                 .collect(Collectors.toList());
     }
