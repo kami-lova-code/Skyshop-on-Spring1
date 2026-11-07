@@ -23,7 +23,7 @@ public class SearchResult {
             contentType = "product";
         } else if (s instanceof org.skypro.skyshop.model.article.Article a) {
             name = a.getTitle();
-            contentType = a.getContentType();
+            contentType = "article";
         }
 
         return new SearchResult(idStr,name,contentType);

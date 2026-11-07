@@ -52,6 +52,11 @@ public class StorageService {
         all.addAll(articles.values());
         return Collections.unmodifiableList(all);
     }
+
+
+    public Optional<Product> getProductById(UUID id) {
+        return Optional.ofNullable(products.get(id));
+    }
 }
 
 
